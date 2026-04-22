@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git *)",
+      "Bash(where git *)",
+      "Bash(gh auth *)",
+      "Bash(winget install *)",
+      "PowerShell(gh auth login --web --git-protocol https --hostname github.com)",
+      "PowerShell(Get-ChildItem \"C:\\\\Program Files\\\\GitHub CLI\\\\\" -ErrorAction SilentlyContinue; Get-ChildItem \"${env:LOCALAPPDATA}\\\\Programs\\\\GitHub CLI\\\\\" -ErrorAction SilentlyContinue)",
+      "PowerShell(& \"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" auth login --web --git-protocol https --hostname github.com)",
+      "PowerShell(& \"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" repo create develop --public --source \"C:\\\\Users\\\\komat\\\\develop\" --remote origin --push 2>&1)"
+    ]
+  }
+}
